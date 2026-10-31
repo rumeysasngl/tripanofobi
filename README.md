@@ -8,16 +8,23 @@ Bu proje; bireylerin demografik özellikleri ile çocukluk dönemi öğrenilmiş
 * **Araştırma Sorusu:** Bireylerin özellikleri ve çocukluk dönemi öğrenilmiş olumsuz deneyimleri ile tripanofobi (iğne korkusu) seviyeleri arasında anlamlı bir ilişki var mıdır?
 
 ## 📊 Veri Seti ve Değişkenler
-* **Veri Kaynağı:** Google Forms üzerinden uygulanan dijital anketler ve hastalarla gerçekleştirilen yüz yüze röportajlar.
+* **Veri Kaynağı:** Bu araştırmada doğrudan katılımcılardan veri toplanmamış; literatürde geçerliliği kanıtlanmış 5 adet uluslararası bilimsel yayının ikincil verileri ve prevalans oranları temel alınmıştır.
 * **Ölçülen Değişkenler:** Öğrenilmiş olumsuz deneyimler, yaş ve cinsiyet.
-* **Ölçüm Birimi:** 0-10 Likert Ölçeği skorları.
+* **Ölçüm Birimi:** 0-10 Likert Ölçeği skorları (MFIS-TR tabanlı).
 
 ## ⚙️ Yöntem ve Analiz
-Toplanan veriler grafiksel analizler ve korelasyon testleri uygulanarak değerlendirilecektir.
+Toplanan ikincil veriler, simülasyon motoru aracılığıyla modellenecek, grafiksel analizler ve korelasyon testleri uygulanarak değerlendirilecektir.
 
 * **H₀ (Sıfır Hipotezi):** Bireylerin öğrenilmiş olumsuz deneyimleri, cinsiyetleri ve yaşları ile tripanofobi seviyeleri arasında anlamlı bir ilişki yoktur.
 * **H₁ (Alternatif Hipotez):** Öğrenilmiş olumsuz deneyimler, erkek cinsiyeti ve yaş küçüldükçe iğne korkusu (tripanofobia) artmaktadır.
 
-## ⚠️ Varsayımlar ve Sınırlılıklar
-* **Sayıltı:** Katılımcıların anket ve röportaj sorularına tamamen içtenlikle ve doğru cevap verdiği varsayılmaktadır.
-* **Sınırlılık:** Bu çalışma, yalnızca araştırma kapsamında yapılan anketlere ve yüz yüze röportajlara katılım sağlayan bireylerin verileriyle sınırlıdır.
+---
+
+## 📊 UML Diyagramları
+
+### 1. Use Case (Kullanım Durumu) Diyagramı
+![Use Case Diyagramı](use case.png)
+
+**Diyagram Açıklaması:**
+Bu diyagram, Tripanofobi İkincil Veri Analiz ve Simülasyon Sisteminin fonksiyonel yeteneklerini modellemektedir. Proje, ders yönergesine tam uyumlu şekilde canlı katılımcılardan bağımsız kurgulandığı için sistemde dış aktör bulunmamakta; tüm süreç "Araştırmacı" aktörü tarafından yönetilmektedir. Sistem; literatür parametrelerinin tanımlanması, ikincil veri setinin modellenmesi (sentetik örneklem üretimi ve outlier temizliği dahil), hipotez testlerinin çalıştırılması (p-değeri hesabı) ve sonuçların PDF/PNG formatında dışa aktarılması işlevlerini kapsamaktadır.
+
