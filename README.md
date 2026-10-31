@@ -23,7 +23,7 @@ Toplanan ikincil veriler, simülasyon motoru aracılığıyla modellenecek, graf
 ## 📊 UML Diyagramları
 
 ### 1. Use Case (Kullanım Durumu) Diyagramı
-![Use Case Diyagramı](use case.png)
+![Kullanım Senaryosu Diyagramı](use%20case.png)
 
 **Diyagram Açıklaması:**
 Bu diyagram, Tripanofobi İkincil Veri Analiz ve Simülasyon Sisteminin fonksiyonel yeteneklerini modellemektedir. Proje, ders yönergesine tam uyumlu şekilde canlı katılımcılardan bağımsız kurgulandığı için sistemde dış aktör bulunmamakta; tüm süreç "Araştırmacı" aktörü tarafından yönetilmektedir. Sistem; literatür parametrelerinin tanımlanması, ikincil veri setinin modellenmesi (sentetik örneklem üretimi ve outlier temizliği dahil), hipotez testlerinin çalıştırılması (p-değeri hesabı) ve sonuçların PDF/PNG formatında dışa aktarılması işlevlerini kapsamaktadır.
