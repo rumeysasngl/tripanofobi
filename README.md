@@ -29,7 +29,7 @@ Toplanan ikincil veriler, simülasyon motoru aracılığıyla modellenecek, graf
 Bu diyagram, Tripanofobi İkincil Veri Analiz ve Simülasyon Sisteminin fonksiyonel yeteneklerini modellemektedir. Proje, ders yönergesine tam uyumlu şekilde canlı katılımcılardan bağımsız kurgulandığı için sistemde dış aktör bulunmamakta; tüm süreç "Araştırmacı" aktörü tarafından yönetilmektedir. Sistem; literatür parametrelerinin tanımlanması, ikincil veri setinin modellenmesi (sentetik örneklem üretimi ve outlier temizliği dahil), hipotez testlerinin çalıştırılması (p-değeri hesabı) ve sonuçların PDF/PNG formatında dışa aktarılması işlevlerini kapsamaktadır.
 
 ### 2. Activity (Etkinlik) Diyagramı
-![Activity Diyagramı](activity.png)
+![Activity Diyagramı](Activity.png)
 
 **Diyagram Açıklaması:**
 Bu diyagram, projenin temel iş sürecini, ikincil verilerin işlenme adımlarını, karar mekanizmalarını ve ölçülebilir veri akışını yatay bir düzlemde temsil etmektedir. Ders notlarında yer alan geleneksel saha araştırması akış mimarisine sadık kalınarak, proje kısıtları doğrultusunda tamamen özgün bir simülasyon döngüsüne dönüştürülmüştür. Süreç, 5 adet bilimsel yayının istatistiksel girdi değerlerinin sisteme tanımlanmasıyla başlar. Akış üzerinde konumlandırılan karar noktası (baklava dilimi), yüklenen dağılım oranlarının doğruluğunu matematiksel olarak denetler. Doğrulama başarısız olursa akış parametre girişinin revize edilmesine yönlendirilir; doğrulama sağlandığında ise makale prevalans oranlarına tam uyumlu bir "Sentetik Hasta Veri Seti" modellenir. Sonraki fazlarda veri bütünlüğünü korumak adına uç değerler temizlenir; Çok Boyutlu Enjeksiyon Korkusu Ölçeği (MFIS) tabanlı korelasyon analizleri yürütülerek süreç analiz raporunun üretilmesiyle başarılı bir şekilde sonlandırılır.
