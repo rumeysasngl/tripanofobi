@@ -28,3 +28,10 @@ Toplanan ikincil veriler, simülasyon motoru aracılığıyla modellenecek, graf
 **Diyagram Açıklaması:**
 Bu diyagram, Tripanofobi İkincil Veri Analiz ve Simülasyon Sisteminin fonksiyonel yeteneklerini modellemektedir. Proje, ders yönergesine tam uyumlu şekilde canlı katılımcılardan bağımsız kurgulandığı için sistemde dış aktör bulunmamakta; tüm süreç "Araştırmacı" aktörü tarafından yönetilmektedir. Sistem; literatür parametrelerinin tanımlanması, ikincil veri setinin modellenmesi (sentetik örneklem üretimi ve outlier temizliği dahil), hipotez testlerinin çalıştırılması (p-değeri hesabı) ve sonuçların PDF/PNG formatında dışa aktarılması işlevlerini kapsamaktadır.
 
+---
+
+### 3. Class (Sınıf) Diyagramı
+![Class Diyagramı](class_diagram.png)
+
+**Diyagram Açıklaması:**
+Bu diyagram, projenin ikincil veri analiz süreçlerinde kullanılan temel veri varlıklarını, bu varlıkların sakladığı öznitelikleri (Attribute) ve aralarındaki yapısal ilişkileri kavramsal düzeyde modellemektedir. Ders notlarında belirtilen metodolojik uyarılar dikkate alınarak, diyagram statik veri yapısını netleştirmek adına fonksiyonel metotlar barındırmayacak şekilde tasarlanmıştır. Model; ikincil veri kaynaklarının künyesini ve dağılımlarını tutan `BilimselYayinReferans`, bilgisayar ortamında simüle edilen örneklemi temsil eden `SimuleHastaProfili` ve nihai istatistiksel çıktıları (korelasyon katsayısı, p-değeri vb.) muhafaza eden `MFIS_AnalizSonucu` sınıflarından oluşmaktadır.
